@@ -40,7 +40,10 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.gson) // For JSON parsing
+    implementation(libs.retrofit) // For networking
+    implementation(libs.retrofit.gson) // For Retrofit with Gson converter
+    implementation(libs.okhttp)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
